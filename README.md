@@ -27,6 +27,7 @@ The project based on guide by Angelina Frimpong’s YouTube teaching with link [
 The dataset was an Excel file, which I converted to CSV for easy manipulation using data tools. There were a total of 541,909 records.
  
 Here is a peep look at the dataset structure:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926205-2b2dd589-f3a8-465a-98c5-2aeb5cef81c7.png)
 
 ## Objective Of The Analysis
@@ -150,6 +151,7 @@ FROM
 ```
 
 Here is the output:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926500-56f7b7ec-b026-4251-b62f-3b0d4a3b8fc1.png)
 
 
@@ -176,9 +178,11 @@ PIVOT(
 
 
 SQL Output:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926533-32f16d94-626f-4833-8ee0-14b2596b2e2e.png)
 
 Tableau Output:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926545-728721d1-70ab-4dd4-86cb-de6b80b2f76a.png)
  
 
@@ -202,20 +206,20 @@ SELECT Cohort_Date,
     ROUND((_12/_1 * 100),2) as i12,  
     ROUND((_13/_1 * 100),2) as i13
 FROM `churn-370413.online_retail.pivot`
-
 ```
 
 SQL Output:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926579-49035cba-cd81-467d-bf8d-175afd884350.png)
 
 
 Tableau Output:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926581-fb3c3f0f-5acf-4c63-814b-bbe9e3be3499.png)
 
 
 ### Generating Churn Values
 Finally, we need to generate values that will enable us calculate the churn rate.
-
 
 ```
   SELECT
@@ -230,14 +234,17 @@ Finally, we need to generate values that will enable us calculate the churn rate
 ```
 
 SQL output:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926608-a00faddf-5014-4102-9c82-dc62ad840a32.png)
 
 
-Tableau Output
+Tableau Output:
+
 ![image](https://user-images.githubusercontent.com/69392408/206926618-1e712e87-6bf8-47f6-965b-154de9e0c3b5.png)
 
 
 ## Data Visualization Dashboard
+
 ![image](https://user-images.githubusercontent.com/69392408/206926638-3d0beee9-a06f-4865-be97-f9f3f14c8948.png)
 
 
